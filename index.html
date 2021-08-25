@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Formulario</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header class="row">
+			<div class="col-xs-12 img-responsive">
+				
+			</div>
+		</header>
+
+		<section class="row main clearfix">
+			
+			<section class="col-xs-12 col-sm-6">
+				<form name="form1" class="formulario" action="" method="">
+					<h1>Formulario de Cotizacion</h1>
+                    <h3>Ingrese los datos para cotizar</h3>
+					
+                    
+                    <br><br>Nombre:
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre (requerido)" size="40" onblur="validarNombre()"><br><br>
+                    <br>Apellidos:
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos (requerido)" size="40" onblur="validarNombre()"><br><br>
+                    <br>Direccion:
+                    <input type="text" id="direccion" name="apellidos" placeholder="Direccion (requerido)" size="40" onblur="validarNombre()"><br><br>
+                    <br>Email:
+					<input type="text" id="mail" name="mail" placeholder="E-mail (requerido)" size="40" onblur="validarCorreo()"><br><br>
+                    <br>Ancho Piso
+                    <input type="text" id = "valor1" name="valor1" placeholder="Ingrese valor 1" size="15" onblur="validar1()"><br><br>
+                    <br>Largo Piso
+                    <input type="text" id = "valor2" name="valor2" placeholder="Ingrese valor 2" size="15" onblur="validar2()"><br><br>
+					<br><br><br>
+					
+					<input class="boton" type="submit" value="Cotizar" onclick="validarFormulario()"><br><br>
+
+					
+                    
+				</form>
+			</section>
+		</section>
+		
+
+
+		<br>
+	</div>
+
+
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
